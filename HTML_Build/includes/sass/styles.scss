@@ -1,0 +1,121 @@
+/* Sass Document */
+
+$primary-color: #2193c7;
+
+@mixin font-stack($size) {
+	font-family:'Raleway', Helvetica, Arial, sans-serif;
+	font-size:$size;
+}
+
+@mixin shadow-black {
+	text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+    filter: dropshadow(rgba(0,0,0,0.4), offx=-0, offy=-1);
+}
+
+@mixin shadow-white {
+	text-shadow: 0px 1px 0px rgba(255,255,255,0.35);
+    filter: dropshadow(rgba(255,255,255,0.35), offx=-0, offy=-1);
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+html, html a {
+    -webkit-font-smoothing: antialiased !important;
+}
+
+body {
+	background-color:$primary-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto !important;
+  -ms-interpolation-mode: bicubic; 
+}
+
+::selection {
+	background:#DD3F12; /* Safari */
+	}
+::-moz-selection {
+	background:#DD3F12; /* Firefox */
+}
+
+.td-logo {
+	margin-top:12%;
+	text-align:center;
+}
+
+h1 {
+	color:white;
+	@include font-stack(26px);
+	font-weight:300;
+	
+	@include shadow-black;
+}
+
+form {
+	width:95%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10%;
+	padding:20px;
+	/*border:1px solid #11648E;*/
+	background-color:#369BCE;
+	text-align:center;
+	@include border-radius(10px);
+
+}
+
+label {
+	@include font-stack(20px);
+	@include shadow-white;
+	color:white;
+	font-weight:400;
+	text-align:center;
+	color:#0D6FA0;
+}
+
+input,textarea {
+	@include font-stack(15px);
+	border:none;
+	padding:10px;
+	color:#369BCE;
+	font-weight:700;
+	width:80%;
+	height:55px;
+	text-align:center;
+	@include border-radius(6px);
+	margin-bottom:25px;
+}
+
+.td_btn {
+	width:80%;
+	@include font-stack(20px);
+	height:55px;
+	font-weight:300;
+	margin-bottom:10px;
+}
+
+span.wpcf7-not-valid-tip-no-ajax {
+	width:75%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:-20px;
+	margin-bottom:10px;
+	background-color:#EB805C;
+	padding:10px 10px;
+	@include font-stack(15px);
+	font-size:15px !important;
+	@include border-radius(6px);
+	color:#FFFFFF !important;
+}
+
+div.wpcf7-response-output wpcf7-validation-errors, div.wpcf7-validation-errors {
+	display:none !important;
+}

@@ -1,0 +1,315 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* UI SLIDER */
+.ui-slider-horizontal { height: .8em; }
+.ui-slider-horizontal .ui-slider-handle { top: -.3em; }
+
+/* djf0619 slider */
+.ui-slider {
+    position: relative;
+    text-align: left;
+    width: 355px;
+    height: 9px;
+    background: url('ui_images/ui.sliderBackground.gif');
+    border: none
+}
+
+.ui-slider-handle {
+    width: 45px;
+    height: 16px;
+    background: url('ui_images/ui.sliderHandle.gif');
+    position: absolute;
+    z-index: 2;
+    cursor: default;
+    text-decoration: none !important;
+    color: #fff !important;
+    font-family:'Granjon LT W01 Roman','Times New Roman' !important;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    padding: 2px 0 0 0;
+}
+
+.ui-slider-handle a {
+    text-decoration: none !important;
+}
+
+/* POINT CALCULATION */
+#pointCalculation{
+    font-family:'Granjon LT W01 Roman','Times New Roman' !important;
+    width: 570px;
+    height: auto;
+    display: block;
+    float: left;
+    border: 1px #c6c8c7 solid;
+    background: #edeeef;
+}
+
+#pointCalculation div{
+    font-family:'Granjon LT W01 Roman','Times New Roman' !important;
+}
+
+.sliders_group {
+    width: 525px;
+    display: block;
+    float: left;
+    margin: 8px 0 0 18px;
+}
+
+.slider_row {
+    width: 525px;
+    height: 39px;
+    display: block;
+    float: left;
+}
+
+.slider_row .slider_caption{
+    width: 120px;
+	color: #807f83;
+    display: block;
+    float: left;
+    font-size: 18px;
+}
+
+.slider_row .slider_holder{
+    width: 400px;
+    display: block;
+    float: left;
+    margin-top: 5px;
+    background: url('ui_images/ui.sliderBackground.gif');
+}
+.min_max{
+    font-family:  Arial, Helvetica, Sans-serif !important;
+    float: left;
+    display: block;
+    margin: 32px 0 0 24px;
+}
+.cp_min{
+    font-family:  Arial, Helvetica, Sans-serif !important;
+    color: #787878;
+    text-transform: uppercase;
+    display: block;
+    float:left;
+    margin-left: 115px;
+    font-size: 11px;
+}
+.cp_max{
+    font-family:  Arial, Helvetica, Sans-serif !important;
+    color: #787878;
+    text-transform: uppercase;
+    display: block;
+    float:left;
+    margin-left: 356px;
+    font-size: 11px;
+}
+
+/* top */
+
+
+
+.type_QFF {
+    width: 570px;
+    height: 77px;
+    background: url(../img/sprites.gif) -306px 0 no-repeat;
+    display: block;
+    float:left;
+
+}
+
+.type_QFF_selected {
+    background: url(../img/sprites.gif) -306px 0px no-repeat;
+    width: 570px;
+    height: 77px;
+    display: block;
+    float:left;
+
+}
+
+.calculatorResult {
+    width: 570px;
+    height: 68px;
+    display:block;
+    float:left;
+    border-top: #c6c8c7 solid 1px;
+    margin-top: 7px;
+	background-color: #fff;
+}
+
+.left_div{
+    width: 282px;
+    height: 68px;
+    display:block;
+    float:left;
+    background: white;
+    position: relative;
+}
+
+.right_div{
+    width: 284px;
+    height: 68px;
+    display:block;
+    float:right;
+    background: #005c7f;
+    border-left: #c6c8c7 solid 1px;
+}
+
+.RP_caption {
+    width: 80px;
+    font-size: 18px;
+    color: #807f83;
+    display:block;
+    float:left;
+    margin: 9px 0 0 15px;
+}
+
+.RP_result {
+    position:absolute;
+    right: 0;
+    top: 10px;
+    width: 166px;
+    text-align:center;
+    font-size: 50px;
+    color: #005c7f;
+    display:block;
+    line-height: 50px;
+    padding-right: 22px;
+}
+
+.MRP_caption {
+    width: 152px;
+    height: 68px;
+    font-size: 18px;
+    color: #3b3745;
+    display:block;
+    float:left;
+	background: url(../img/sprites.gif) -706px -504px no-repeat;
+}
+
+.MRP_result
+{
+    position:absolute;
+    right: 0;
+    top: 10px;
+    width: 145px;
+    text-align:center;
+    font-size: 50px;
+    color: #3b3745;
+    display:block;
+    line-height: 50px;
+}
+.QFF_caption {
+    width: 152px;
+    height: 68px;
+    font-size: 18px;
+    color: #3b3745;
+    display:block;
+    float:left;
+    background: url(../img/sprites.gif) -706px -416px no-repeat;
+}
+
+.QFF_result {
+    position:absolute;
+    right: 0;
+    top: 10px;
+    width: 145px;
+    text-align:center;
+    font-size: 50px;
+    color: #ffffff;
+    display:block;
+    line-height: 50px;
+}
+
+#show_MRP {
+    position: relative;
+}
+
+#show_QFF {
+    position: relative;
+}
+
+.weekRmonthly{
+    width: 140px;
+    height: 32px;
+    border: 1px solid #c6c8c7;
+    display: block;
+    float: left;
+    margin-left: 9px;
+    margin-top: 17px;
+}
+
+.calc_week{
+    width:70px;
+    height: 32px;
+    background: url(../img/sprites.gif) -706px -333px no-repeat;
+    display:block;
+    float:left;
+    cursor: pointer;
+}
+a.calc_week:hover {
+	background: url(../img/sprites.gif) -706px -367px no-repeat;
+}
+.calc_week_selected{
+    width:70px;
+    height: 32px;
+    background: url(../img/sprites.gif) -706px -367px no-repeat;
+    display:block;
+    float:left;
+    cursor: pointer;
+}
+
+.calc_month {
+    width:70px;
+    height: 32px;
+    background: url(../img/sprites.gif) -797px -334px no-repeat;
+    display:block;
+    float:left;
+    cursor: pointer;
+}
+a.calc_month:hover {
+	background: url(../img/sprites.gif) -797px -367px no-repeat;
+}
+.calc_month_selected{
+    width:70px;
+    height: 32px;
+    background: url(../img/sprites.gif) -797px -367px no-repeat;
+    display:block;
+    float:left;
+    cursor: pointer;
+}
+
+.type_text{
+    font-size: 23px;
+    color: #807f83;
+    display: block;
+    float: left;
+    margin-top:22px;
+    width: 372px;
+	line-height: 30px;
+}
+
+#calc_header{
+    margin-top: 0px;
+    margin-left: 17px;
+    float: left;
+}
+
+.pointCalculation_header {
+    font-family:'Granjon LT W01 Roman','Times New Roman' !important;
+    font-size: 16px;
+    color: #807f83;
+    padding: 0 0 10px 0;
+}
+
+.pointCalculation_footer {
+    font-family:  Arial, Helvetica, Sans-serif !important;
+    font-size: 9px;
+    color: #666666;
+    padding: 13px 0 0 1px;
+    line-height: 10px;
+    float:left;
+}
+.pointCalculation_footer sup {
+	font-size: 8px;
+	vertical-align: 3px;
+}
